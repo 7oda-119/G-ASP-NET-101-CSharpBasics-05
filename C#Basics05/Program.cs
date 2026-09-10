@@ -28,7 +28,19 @@ namespace C_Basics05
             //Console.WriteLine(shelfCopies[1, 0]);
 
             #endregion
+
+            #region Question03
+            ////-Write a method called PrintWelcomeMessage that takes no parameters and
+            ////prints "Welcome to the Library!".Call it from Main.
+
+            //PrintWelcomeMessage();
+
             #endregion
+            #endregion
+        }
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
         }
     }
 }
