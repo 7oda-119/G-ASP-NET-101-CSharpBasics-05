@@ -123,6 +123,18 @@ namespace C_Basics05
             //PrintAllTitles("C#Basics", "C#OOP", "C#Advanced");
             #endregion
             #endregion
+
+            #region Access Modifiers
+            #region Question01
+            ////Add a private string password = "secret"; field to a Book class. Try to print it from Main (outside the class).
+            ////What happens, and why?
+            ////Answer: The password field is private, so it cannot be accessed from outside the Book class.
+            
+            //Book book = new Book();
+            //Console.WriteLine(book.password);  // compile-time error (password is private)
+
+            #endregion
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
