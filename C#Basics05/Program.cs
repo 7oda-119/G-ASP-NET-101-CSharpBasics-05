@@ -36,11 +36,24 @@ namespace C_Basics05
             //PrintWelcomeMessage();
 
             #endregion
+
+            #region Question04
+            ////Write a method PrintBookTitle(string title) that prints "Book title: " + title.
+            ////Call it with "Clean Code".
+
+            //PrintBookTitle("Clean Code");
+
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
+        }
+
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine($"Book title: {title}");
         }
     }
 }
