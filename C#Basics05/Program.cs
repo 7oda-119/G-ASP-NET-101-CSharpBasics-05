@@ -67,6 +67,17 @@ namespace C_Basics05
             //ApplyDiscount(prices);
             //Console.WriteLine(prices[0]);
             #endregion
+
+            #region Question07
+            ////Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward.
+            ////How is the result different from question 5 ?
+            ////Answer: pages is passed by reference (recieve the reference of the original variable, not a copy),
+            ////so if we change the value of pages in the method, it will also change the value of pages in the original variable.
+
+            //int pages = 400;
+            //AddBonusPagesByRef(ref pages);
+            //Console.WriteLine(pages);
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
@@ -85,6 +96,10 @@ namespace C_Basics05
         static void ApplyDiscount(double[] prices) 
         {
             prices[0] -= 5;
+        }
+        static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
         }
 
     }
