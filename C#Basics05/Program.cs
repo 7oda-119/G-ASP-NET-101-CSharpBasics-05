@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C_Basics05
@@ -102,6 +103,14 @@ namespace C_Basics05
             //TryGetPrice("Clean Code", out double price);
             //Console.WriteLine(price);
             #endregion
+
+            #region Question02
+            ////2-Write a method PrintBookInfo(string title, int pages = 300) where pages is optional.
+            ////Call it once with only a title, and once passing both a title and pages.
+
+            //PrintBookInfo("C#Basics");
+            //PrintBookInfo("C#OOP", 320);
+            #endregion
             #endregion
             #endregion
         }
@@ -142,6 +151,10 @@ namespace C_Basics05
                 price = 0;
                 return false;
             }
+        }
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
 
     }
