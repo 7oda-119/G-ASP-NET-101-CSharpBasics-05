@@ -144,6 +144,14 @@ namespace C_Basics05
             //Book book = new Book();
             //Console.WriteLine(book.copiesInStock); 
             #endregion
+
+            #region Question03
+            ////Add a public string Title; field to Book. Set it and print it from Main.
+
+            //Book book = new Book();
+            //book.Title = "C# Basics";
+            //Console.WriteLine(book.Title);
+            #endregion
             #endregion
             #endregion
         }
