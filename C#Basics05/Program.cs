@@ -92,6 +92,18 @@ namespace C_Basics05
             //Console.WriteLine(prices.Length);
             #endregion
             #endregion
+
+            #region Assignment05
+            #region Function Parameter Passing
+            #region Question01
+            ////Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code",
+            ////otherwise returns false and sets price to 0.Call it and print the price if found
+
+            //TryGetPrice("Clean Code", out double price);
+            //Console.WriteLine(price);
+            #endregion
+            #endregion
+            #endregion
         }
         static void PrintWelcomeMessage()
         {
@@ -117,6 +129,19 @@ namespace C_Basics05
         static void ReplaceArray(ref double[] prices)
         {
             prices = new double[] { 10.0, 12.5, 15.0 };
+        }
+        static bool TryGetPrice(string title, out double price) 
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
         }
 
     }
