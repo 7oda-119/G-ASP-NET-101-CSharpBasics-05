@@ -44,6 +44,17 @@ namespace C_Basics05
             //PrintBookTitle("Clean Code");
 
             #endregion
+
+            #region Question05
+            ////Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            ////int pages = 400; and print pages afterward.
+            ////What do you expect to see, and why?
+            ////Answer: pages is passed by value (take a copy of the value of pages), so the original variable still has the same value of 400.
+
+            //int pages = 400;
+            //AddBonusPages(pages);
+            //Console.WriteLine(pages);
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
@@ -54,6 +65,10 @@ namespace C_Basics05
         static void PrintBookTitle(string title)
         {
             Console.WriteLine($"Book title: {title}");
+        }
+        static void AddBonusPages(int pages) 
+        {
+            pages += 50;
         }
     }
 }
