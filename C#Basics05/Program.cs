@@ -117,6 +117,11 @@ namespace C_Basics05
 
             //PrintBookInfo(pages:200, title:"C#Advanced");
             #endregion
+            #region Question04
+            ////Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles.
+
+            //PrintAllTitles("C#Basics", "C#OOP", "C#Advanced");
+            #endregion
             #endregion
             #endregion
         }
@@ -161,6 +166,13 @@ namespace C_Basics05
         static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine($"Title: {title}, Pages: {pages}");
+        }
+        static void PrintAllTitles(params string[] titles) 
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
         }
 
     }
