@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C_Basics05
 {
@@ -78,6 +79,18 @@ namespace C_Basics05
             //AddBonusPagesByRef(ref pages);
             //Console.WriteLine(pages);
             #endregion
+
+            #region Question08
+            ////Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.
+            ////Call it with your prices array and print prices.Length
+            ////What do you expect to see, and why?
+            ////Answer: prices is passed by ref-reference type (refer to the reference of the original array, not take a copy),
+            ////so if we change the prices array in the method, it will change the reference of original prices.
+
+            //double[] prices = { 25.5, 40.0 };
+            //ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length);
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
@@ -100,6 +113,10 @@ namespace C_Basics05
         static void AddBonusPagesByRef(ref int pages)
         {
             pages += 50;
+        }
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
         }
 
     }
