@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Numerics;
 using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -129,10 +130,19 @@ namespace C_Basics05
             ////Add a private string password = "secret"; field to a Book class. Try to print it from Main (outside the class).
             ////What happens, and why?
             ////Answer: The password field is private, so it cannot be accessed from outside the Book class.
-            
+
             //Book book = new Book();
             //Console.WriteLine(book.password);  // compile-time error (password is private)
 
+            #endregion
+
+            #region Question02
+            ////Add an internal int copiesInStock = 5; field to Book. Print it from Main.
+            ////Does it compile? Why?
+            ////Answer: Yes, it compiles because the copiesInStock field is internal, so it can be accessed from the same project.
+
+            //Book book = new Book();
+            //Console.WriteLine(book.copiesInStock); 
             #endregion
             #endregion
             #endregion
