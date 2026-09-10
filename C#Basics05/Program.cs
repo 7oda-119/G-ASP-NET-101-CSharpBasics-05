@@ -55,6 +55,18 @@ namespace C_Basics05
             //AddBonusPages(pages);
             //Console.WriteLine(pages);
             #endregion
+
+            #region Question06
+            ////Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0].
+            ////Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.
+            ////What do you expect to see, and why?
+            ////Answer: prices[] is passed by reference (take a copy of the reference of the original array),
+            ////  so if we change the value of prices[0] in the method, it will also change the value of prices[0] in the original array.
+
+            //double[] prices = { 25.5, 40.0 };
+            //ApplyDiscount(prices);
+            //Console.WriteLine(prices[0]);
+            #endregion
             #endregion
         }
         static void PrintWelcomeMessage()
@@ -70,5 +82,10 @@ namespace C_Basics05
         {
             pages += 50;
         }
+        static void ApplyDiscount(double[] prices) 
+        {
+            prices[0] -= 5;
+        }
+
     }
 }
